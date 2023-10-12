@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.scss";
 import Game from "./components/Game/Game";
 
@@ -127,6 +127,13 @@ const games = [
 
 const App = () => {
   const [showDetailsId, setShowDetailsId] = useState(null);
+  const [gameData, setGameData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/gameInfo")
+      .then(response => response.json())
+      .then(data => setGameData(data))
+  }, [])
 
   return (
     <div className="app-container">
@@ -140,7 +147,7 @@ const App = () => {
 
       <main>
         <div className="games-container container">
-          {games.map((game) => (
+          {gameData.map((game) => (
             <Game
               key={game.id}
               {...game}
