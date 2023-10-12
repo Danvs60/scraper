@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "title" : "testGame1",
+        "img_src" : "testSrc",
+        "imdb_rating" : 4.5,
+        "age_rating" : 10
+    },
+    {
+        "id": 1,
+        "title" : "testGame2",
+        "img_src" : "testSrc",
+        "imdb_rating" : 4.5,
+        "age_rating" : 10
+    },
+    {
+        "id": 2,
+        "title" : "testGame3",
+        "img_src" : "testSrc",
+        "imdb_rating" : 4.5,
+        "age_rating" : 10
+    },
+    {
+        "id": 3,
+        "title" : "testGame4",
+        "img_src" : "testSrc",
+        "imdb_rating" : 4.5,
+        "age_rating" : 10
+    }
+]

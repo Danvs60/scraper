@@ -1,3 +1,3 @@
 package com.example.demo;
 
-public record GameInfo(String title, String imgSrc, double ignRating, int ageRating) { }
+public record GameInfo(int id, String title, String img_src, double imdb_rating, int age_rating) { }
