@@ -1,0 +1,29 @@
+.app-container {
+  header {
+    margin-bottom: 2em;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      color: var(--primary-theme);
+      border-bottom: solid 1px var(--primary-theme);
+
+      button {
+        background: none;
+        border: none;
+        color: var(--primary-theme);
+      }
+    }
+  }
+
+  main {
+    .games-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+    }
+  }
+}
